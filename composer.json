@@ -1,0 +1,21 @@
+{
+    "name": "nelwhix/contact-form",
+    "description": "a simple app to send user complaints to my email",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nelwhix\\ContactForm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nelson Isioma",
+            "email": "58360242+Nelwhix@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.14",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
