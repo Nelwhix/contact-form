@@ -2,9 +2,16 @@
 
 namespace Nelwhix\ContactForm\Handlers;
 
+use Http\Request;
+use Http\Response;
+
 class MailHandler
 {
+    public function __construct(private Request $request,  private Response $response)
+    {
+    }
+
     public function index() {
-        echo "Hello world";
+        $this->response->setContent("Hola amigos");
     }
 }
