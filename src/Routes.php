@@ -4,8 +4,6 @@ return [
     [
         'GET',
         '/',
-        function () {
-            echo "Hello World";
-        }
+        ['Nelwhix\ContactForm\Handlers\MailHandler', 'index'],
     ]
 ];
