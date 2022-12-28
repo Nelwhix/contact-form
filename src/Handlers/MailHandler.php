@@ -12,6 +12,15 @@ class MailHandler
     }
 
     public function index() {
-        $this->response->setContent("Hola amigos");
+        $index = file_get_contents(__DIR__ . "/../../public/index.html");
+
+        $this->response->setContent($index);
+    }
+
+    public function send($request) {
+        var_dump($request);
+        die();
+        $response = implode(" ", );
+        $this->response->setContent($response);
     }
 }

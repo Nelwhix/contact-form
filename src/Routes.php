@@ -5,5 +5,10 @@ return [
         'GET',
         '/',
         ['Nelwhix\ContactForm\Handlers\MailHandler', 'index'],
+    ],
+    [
+        'POST',
+        '/',
+        ['Nelwhix\ContactForm\Handlers\MailHandler', 'send']
     ]
 ];

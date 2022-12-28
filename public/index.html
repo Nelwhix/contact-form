@@ -6,24 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <h2>Contact form</h2>
         <p>Drop your email and complaint, I will holla back as soon as possible</p>
 
-        <form action="/email/send" method="post">
-            <div>
-                <label for="email">Email-address</label>
-                <input type="text" id="email">
+        <form action="/" method="post">
+            <div class="form-element">
+                <label for="name">Name</label>
+                <input type="text" id="name">
             </div>
-            <div>
+            <div class="form-element">
                 <label for="subject">Subject of email</label>
                 <input type="text" id="subject">
             </div>
-            <div>
+            <div class="form-element">
                 <label for="body">Body of email</label>
-                <input type="text" id="body">
+                <textarea id="body"></textarea>
             </div>
             <button type="submit">Send</button>
         </form>
