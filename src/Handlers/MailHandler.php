@@ -5,8 +5,7 @@ namespace Nelwhix\ContactForm\Handlers;
 use Http\Request;
 use Http\Response;
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+
 
 class MailHandler
 {
